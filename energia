@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnergiAsesores - Cambio de Suministros</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .cta {
+            background: #28a745;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+        .cta:hover {
+            background: #218838;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #007BFF;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>EnergiAsesores - Gestión de Suministros</header>
+    <div class="container">
+        <h2>Facilitamos el Cambio de Titularidad y de Compañía</h2>
+        <p>En EnergiAsesores trabajamos con inmobiliarias y clientes particulares para gestionar de forma rápida y eficiente los cambios de titularidad y las altas de suministros.</p>
+        <p>Consulta las comisiones para inmobiliarias por cada cliente referido.</p>
+    </div>
+    <div class="container">
+        <h3>Solicita tu Gestión</h3>
+        <form action="mailto:artigliocarnero@icloud.com" method="post" enctype="multipart/form-data">
+            <input type="text" name="nombre" placeholder="Nombre del Cliente" required>
+            <input type="email" name="email" placeholder="Email del Cliente" required>
+            <input type="text" name="telefono" placeholder="Teléfono" required>
+            <input type="text" name="direccion" placeholder="Dirección del Suministro" required>
+            <textarea name="mensaje" placeholder="Detalles adicionales" rows="4"></textarea>
+            <label for="factura">Sube la factura:</label>
+            <input type="file" id="factura" name="factura" accept="application/pdf,image/*" required>
+            <button type="submit">Enviar Solicitud</button>
+        </form>
+    </div>
+    <div class="container">
+        <h3>Contacto</h3>
+        <p><strong>Pedro:</strong> +34 600 123 456</p>
+        <p><strong>Cristian:</strong> +34 650 987 654</p>
+    </div>
+</body>
+</html>
